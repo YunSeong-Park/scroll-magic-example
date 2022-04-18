@@ -3,6 +3,7 @@ import { css } from "@emotion/react";
 import React from "react";
 
 import { Link, Route, Routes } from "react-router-dom";
+import Sticky from "./components/scroll-magic-example/Sticky";
 
 const rootStyle = css`
   min-height: 100vh;
@@ -81,7 +82,7 @@ const Home: React.FC<{}> = () => {
 
 const linkList = [
   { to: "/", label: "Home", compoent: Home },
-  { to: "/sticky", label: "Sticky", compoent: Home },
+  { to: "/sticky", label: "Sticky", compoent: Sticky },
   { to: "/sticky2", label: "Sticky2", compoent: Home },
   { to: "/class-toggle", label: "Class Toggle", compoent: Home },
   { to: "/section-wipes", label: "Section Wipes", compoent: Home },
