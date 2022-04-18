@@ -23,21 +23,22 @@ const style = css`
 const Sticky: React.FC<{}> = () => {
   return (
     <div css={style}>
-      <div className="section" />
+      <div className="section">scroll 하세요.</div>
       <Controller>
-        <Scene duration={600} pin={true} enabled={true}>
+        <Scene duration={600} pin enabled={true}>
           <div className="sticky">
-            <div>Pin Test</div>
+            <span>dkssud</span>
+            <div>Pin Test1</div>
           </div>
         </Scene>
         <Scene duration={200} pin={{ pushFollowers: false }}>
           <div className="sticky">
-            <div>Pin Test</div>
+            <div>Pin Test2</div>
           </div>
         </Scene>
-        <Scene duration={300} pin={true} offset={100}>
+        <Scene duration={300} pin={true} offset={200}>
           <div className="sticky blue">
-            <div>Pin Test</div>
+            <div>Pin Test3</div>
           </div>
         </Scene>
       </Controller>
