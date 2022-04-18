@@ -3,6 +3,7 @@ import { css } from "@emotion/react";
 import React from "react";
 
 import { Link, Route, Routes } from "react-router-dom";
+import ClassToggle from "./components/scroll-magic-example/ClassToggle";
 import Sticky from "./components/scroll-magic-example/Sticky";
 import Sticky2 from "./components/scroll-magic-example/Sticky2";
 
@@ -85,7 +86,7 @@ const linkList = [
   { to: "/", label: "Home", compoent: Home },
   { to: "/sticky", label: "Sticky", compoent: Sticky },
   { to: "/sticky2", label: "Sticky2", compoent: Sticky2 },
-  { to: "/class-toggle", label: "Class Toggle", compoent: Home },
+  { to: "/class-toggle", label: "Class Toggle", compoent: ClassToggle },
   { to: "/section-wipes", label: "Section Wipes", compoent: Home },
   { to: "/section-wipes2", label: "Section Wipes2", compoent: Home },
   { to: "/tween", label: "Tween", compoent: Home },
