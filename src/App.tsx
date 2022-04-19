@@ -5,6 +5,7 @@ import React from "react";
 import { Link, Route, Routes } from "react-router-dom";
 import ClassToggle from "./components/scroll-magic-example/ClassToggle";
 import SectionWipes from "./components/scroll-magic-example/SectionWipes";
+import SectionWipes2 from "./components/scroll-magic-example/SectionWipse2";
 import Sticky from "./components/scroll-magic-example/Sticky";
 import Sticky2 from "./components/scroll-magic-example/Sticky2";
 
@@ -43,7 +44,11 @@ function App() {
           </ul>
         </nav>
       </aside>
-      <main>
+      <main
+        css={css`
+          overflow: hidden;
+        `}
+      >
         <Routes>
           {linkList.map((link) => (
             <Route path={link.to} element={<link.compoent />} />
@@ -89,7 +94,7 @@ const linkList = [
   { to: "/sticky2", label: "Sticky2", compoent: Sticky2 },
   { to: "/class-toggle", label: "Class Toggle", compoent: ClassToggle },
   { to: "/section-wipes", label: "Section Wipes", compoent: SectionWipes },
-  { to: "/section-wipes2", label: "Section Wipes2", compoent: Home },
+  { to: "/section-wipes2", label: "Section Wipes2", compoent: SectionWipes2 },
   { to: "/tween", label: "Tween", compoent: Home },
   { to: "/split-text", label: "Split Text", compoent: Home },
   { to: "/list", label: "List", compoent: Home },
