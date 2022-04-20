@@ -9,12 +9,12 @@ const sectionWipes2Style = css`
   overflow: hidden;
   #pinContainer {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
   }
   #pinContainer .panel {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     position: absolute;
     text-align: center;
   }

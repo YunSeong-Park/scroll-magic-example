@@ -14,7 +14,6 @@ const rootStyle = css`
   width: 100%;
   background-color: #fff;
   display: grid;
-  grid-template-columns: 200px 1fr;
 `;
 
 const listStyle = css`
@@ -25,9 +24,11 @@ const listStyle = css`
 `;
 
 const asideStyle = css`
-  position: relative;
+  position: fixed;
+  width: 200px;
   height: 100%;
   background-color: grey;
+  z-index: 2;
 `;
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
       <main
         css={css`
           overflow: hidden;
+          margin-left: 200px;
         `}
       >
         <Routes>
