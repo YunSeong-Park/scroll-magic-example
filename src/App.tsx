@@ -8,6 +8,7 @@ import SectionWipes from "./components/scroll-magic-example/SectionWipes";
 import SectionWipes2 from "./components/scroll-magic-example/SectionWipse2";
 import Sticky from "./components/scroll-magic-example/Sticky";
 import Sticky2 from "./components/scroll-magic-example/Sticky2";
+import TweenComponent from "./components/scroll-magic-example/Tween";
 
 const rootStyle = css`
   min-height: 100vh;
@@ -97,7 +98,7 @@ const linkList = [
   { to: "/class-toggle", label: "Class Toggle", compoent: ClassToggle },
   { to: "/section-wipes", label: "Section Wipes", compoent: SectionWipes },
   { to: "/section-wipes2", label: "Section Wipes2", compoent: SectionWipes2 },
-  { to: "/tween", label: "Tween", compoent: Home },
+  { to: "/tween", label: "Tween", compoent: TweenComponent },
   { to: "/split-text", label: "Split Text", compoent: Home },
   { to: "/list", label: "List", compoent: Home },
   { to: "/svg", label: "Svg", compoent: Home },
