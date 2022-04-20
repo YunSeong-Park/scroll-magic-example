@@ -4,8 +4,10 @@ import React from "react";
 
 import { Link, Route, Routes } from "react-router-dom";
 import ClassToggle from "./components/scroll-magic-example/ClassToggle";
+import List from "./components/scroll-magic-example/List";
 import SectionWipes from "./components/scroll-magic-example/SectionWipes";
 import SectionWipes2 from "./components/scroll-magic-example/SectionWipse2";
+import SplitText from "./components/scroll-magic-example/SplitText";
 import Sticky from "./components/scroll-magic-example/Sticky";
 import Sticky2 from "./components/scroll-magic-example/Sticky2";
 import TweenComponent from "./components/scroll-magic-example/Tween";
@@ -99,8 +101,8 @@ const linkList = [
   { to: "/section-wipes", label: "Section Wipes", compoent: SectionWipes },
   { to: "/section-wipes2", label: "Section Wipes2", compoent: SectionWipes2 },
   { to: "/tween", label: "Tween", compoent: TweenComponent },
-  { to: "/split-text", label: "Split Text", compoent: Home },
-  { to: "/list", label: "List", compoent: Home },
+  { to: "/split-text", label: "Split Text", compoent: SplitText },
+  { to: "/list", label: "List", compoent: List },
   { to: "/svg", label: "Svg", compoent: Home },
   { to: "/parallax", label: "parallax", compoent: Home },
   { to: "/components", label: "Components", compoent: Home },
