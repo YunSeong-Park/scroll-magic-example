@@ -10,6 +10,7 @@ import SectionWipes2 from "./components/scroll-magic-example/SectionWipse2";
 import SplitText from "./components/scroll-magic-example/SplitText";
 import Sticky from "./components/scroll-magic-example/Sticky";
 import Sticky2 from "./components/scroll-magic-example/Sticky2";
+import Svg from "./components/scroll-magic-example/Svg";
 import TweenComponent from "./components/scroll-magic-example/Tween";
 
 const rootStyle = css`
@@ -103,7 +104,7 @@ const linkList = [
   { to: "/tween", label: "Tween", compoent: TweenComponent },
   { to: "/split-text", label: "Split Text", compoent: SplitText },
   { to: "/list", label: "List", compoent: List },
-  { to: "/svg", label: "Svg", compoent: Home },
+  { to: "/svg", label: "Svg", compoent: Svg },
   { to: "/parallax", label: "parallax", compoent: Home },
   { to: "/components", label: "Components", compoent: Home },
   { to: "/mutiple-controllers", label: "Components", compoent: Home },
