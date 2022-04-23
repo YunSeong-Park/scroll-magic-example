@@ -12,8 +12,8 @@ const style = css`
 `;
 
 interface MoonProps {
-  opacity: number;
-  scale: { x: number; y: number };
+  opacity?: number;
+  scale?: { x: number; y: number };
 }
 
 const Moon: React.FC<MoonProps> = ({ opacity = 1, scale = { x: 1, y: 1 } }) => {
