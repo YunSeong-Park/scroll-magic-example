@@ -37,7 +37,7 @@ const asideStyle = css`
   z-index: 2;
 `;
 
-function App() {
+function ScrollMagicApp() {
   return (
     <section css={rootStyle}>
       <aside css={asideStyle}>
@@ -67,7 +67,7 @@ function App() {
   );
 }
 
-export default App;
+export default ScrollMagicApp;
 
 const LinkBtn = ({ to, label }: { to: string; label: string }) => {
   return (
