@@ -1,5 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
+import { Tween } from "react-gsap";
 
 const style = css`
   position: fixed;
@@ -10,25 +11,19 @@ const style = css`
 `;
 
 interface MountainProps {
-  opacity?: number;
-  translate3d?: {
-    x: number;
-    y: number;
-    z: number;
-  };
+  progress?: number;
 }
 
-const Mountain: React.FC<MountainProps> = ({
-  opacity = 1,
-  translate3d = { x: 0, y: 0, z: 0 },
-}) => {
-  const { x, y, z } = translate3d;
+const Mountain: React.FC<MountainProps> = ({ progress = 0 }) => {
   return (
-    <img
-      css={style}
-      style={{ opacity, transform: `translate3d( ${x}px, ${y}px, ${z}px )` }}
-      src="res/mountain.png"
-    />
+    <Tween
+      from={{ opacity: 0.62, transform: "translate3d(0px, 150px, 0px)" }}
+      to={{ opacity: 0, transform: "translate3d(0px, 400px, 0px)" }}
+      paused
+      totalProgress={progress}
+    >
+      <img css={style} src="res/mountain.png" />
+    </Tween>
   );
 };
 

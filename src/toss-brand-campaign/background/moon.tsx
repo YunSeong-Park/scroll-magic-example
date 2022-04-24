@@ -1,5 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
+import { Tween } from "react-gsap";
 
 const style = css`
   position: fixed;
@@ -12,18 +13,21 @@ const style = css`
 `;
 
 interface MoonProps {
+  progress?: number;
   opacity?: number;
   scale?: { x: number; y: number };
 }
 
-const Moon: React.FC<MoonProps> = ({ opacity = 1, scale = { x: 1, y: 1 } }) => {
-  const { x, y } = scale;
+const Moon: React.FC<MoonProps> = ({ progress }) => {
   return (
-    <img
-      css={style}
-      src="res/moon.png"
-      style={{ opacity, transform: `scale( ${x}, ${y} )` }}
-    />
+    <Tween
+      from={{ opacity: 0, transform: "scale( 0.8, 0.8 )" }}
+      to={{ opacity: 1, transform: "scale( 1, 1 )" }}
+      paused
+      totalProgress={progress}
+    >
+      <img css={style} src="res/moon.png" />
+    </Tween>
   );
 };
 
